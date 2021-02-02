@@ -5,8 +5,8 @@ date: "Due Fed 3rd"
 output: html_document
 ---
 
-MAKE SURE YOU READ AND FOLLOW **ALL** INSTRUCTIONS ON THE INSTRUCTION DOCUMENT. 
-
+## Link to my GitHub repository:
+### https://github.com/fengj2/Data2401_RProj1
 ### Load packages
 
 ```{r load-packages, message=FALSE}
@@ -20,8 +20,6 @@ library(datasauRus)
 This Data has 142 rows and 3 columns
 
 ### Exercise 2
-
-(The answers for this Exercise are given for you below. But you should clean up some of the narrative so that it only includes what you want to turn in.)
 
 First let's plot the data in the dino dataset:
 
