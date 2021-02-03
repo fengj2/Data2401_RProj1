@@ -2,7 +2,10 @@
 title: "R Project 1 - Hello R"
 author: "Junhao Feng"
 date: "Due Fed 3rd"
-output: html_document
+output: 
+  html_document: 
+    highlight: tango
+    theme: cosmo
 ---
 
 ## Link to my GitHub repository:
@@ -28,7 +31,7 @@ The datasaurus dozen file has 1846(142*13) rows and 3 columns. The variables inc
 
 First let's plot the data in the dino dataset:
 
-```{r plot-dino, fig.height=3, fig.width=6}
+```{r plot-dino, fig.height=5, fig.width=6}
 dino_data <- datasaurus_dozen %>%
   filter(dataset == "dino")
 ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
@@ -37,7 +40,7 @@ ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
 
 And next calculate the correlation between `x` and `y` in this dataset:
 
-```{r cor-dino}
+```{r cor-dino, fig.height=13, fig.width=12}
 dino_data %>%
   summarize(r = cor(x, y))
 ```
